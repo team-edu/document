@@ -1,0 +1,24 @@
+:toc: left
+:sectnums:
+:toc-title: 目次
+:chapter-label:
+
+= Asciidoc sample
+
+
+== pluntuml
+
+[plantuml]
+----
+@startuml
+Bob->Alice : hello
+@enduml
+----
+
+== csv
+
+.read csv
+[format="csv", options="header"]
+|===
+include::./csv/sample.csv[]
+|===

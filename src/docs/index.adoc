@@ -1,0 +1,38 @@
+:toc: left
+:sectnums:
+:toc-title: 目次
+:chapter-label:
+
+== index
+
+[cols="2*^",opts="autowidth"]
+|===
+|名称     |概要
+|<<./sample/sample.adoc#,sample>>   | サンプル用
+|===
+
+
+== 構成
+[source,sh]
+----
+├── README.md
+├── build
+│   └── asciidoc
+│       └── html5
+│           ├── index.html
+│           ├── sample
+│           │   └── sample.html
+│           ├── test
+│           │   └── test.html
+│           └── test.html
+├── build.gradle
+└── src
+    └── docs
+        ├── index.adoc
+        └── sample
+            └── sample.adoc
+----
+
+
+== 利用方法
+

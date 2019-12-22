@@ -1,0 +1,24 @@
+apply plugin: 'org.asciidoctor.convert'
+apply plugin: 'com.github.jruby-gradle.base'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.jruby-gradle:jruby-gradle-plugin:1.5.0'
+        classpath 'org.asciidoctor:asciidoctor-gradle-plugin:1.5.3'
+        classpath 'org.asciidoctor:asciidoctorj-diagram:1.5.4.1'
+    }   
+}
+
+dependencies {
+    gems 'rubygems:asciidoctor-diagram:1.5.7'
+}
+
+asciidoctor {
+    requires = ['asciidoctor-diagram']
+    sourceDir = file('./src/docs') 
+    outputDir = file('docs')
+}
+

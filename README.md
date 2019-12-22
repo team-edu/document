@@ -1,2 +1,4 @@
-# document
-資料置き場
+# asciidoc
+
+## build
+`gradle asciidoctor`

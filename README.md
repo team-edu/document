@@ -1,4 +1,4 @@
 # asciidoc
 
 ## build
-`gradle asciidoctor`
+`./gradlew asciidoctor`
